@@ -65,12 +65,6 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
     </dependencies>
     <build>
         <plugins>
@@ -93,7 +87,7 @@
                 <executions>
                     <execution>
                         <id>schemas</id>
-                        <phase>generate-sources</phase>
+                        <phase>none</phase>
                         <goals>
                             <goal>schema</goal>
                             <goal>protocol</goal>
